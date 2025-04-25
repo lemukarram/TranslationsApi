@@ -1,0 +1,5 @@
+RewriteRule ^ index.php [L]
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^api - [E=HTTP_ACCEPT:application/json]
+</IfModule>
